@@ -10,11 +10,10 @@ This method has been accepted and will be published at the **ICPR 2024** confere
 Our training routine does not need any annotated ground truth data and is therefore well suited for remote sensing applications, where detailed annotated ground truth data is often missing. We achieve this by introducing a training scheme based on a pseudo ground-truth. This is done by using the initial noisy disparity map as a starting point for training. For robustness noisy/wrong predictions are removed using the left-right consistency check. The so created sparse disparity map is then used as the pseudo ground-truth for training. After each training step this pseudo ground-truth is updated. To track convergence the number of all removed inconsistent point is tracked. 
 
 Our training loop visualized: 
-![Training Loop](./docs/Disp_creation_new.png)
+<img align="center" src="./docs/Disp_creation_new.png" width="1559" height="479">
 
 Tracking of inconsistent points visualized: 
-![Incons Points](./docs/Dominik_ICPR_Pres_1-01.png)
-
+<img align="center" src="./docs/Dominik_ICPR_Pres_1-01.png" width="828" height="511">
 
 The whole project is in python 3 and pytorch 1.8.0 and Cuda 12.4.
 
