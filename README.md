@@ -1,5 +1,5 @@
 # SAda-Net
-![Teaser image](./docs/Network_header.png)
+![Teaser image](./docs/Header.png)
 ### A Self-Supervised Adaptive Stereo Estimation CNN For Remote Sensing Image Data
 Dominik Hirner, Friedrich Fraundorfer
 
