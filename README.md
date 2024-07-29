@@ -7,8 +7,7 @@ Dominik Hirner, Friedrich Fraundorfer
 A pytorch implementation of our completely self-supervised stereo method for remote sensing image data.
 This method has been accepted and will be published at the **ICPR 2024** conference. If you use our work please cite our paper (link later).
 
-The whole project is in python 3 and pytorch X.X.X
-
+The whole project is in python 3 and pytorch 1.8.0 and Cuda 12.4.
 
 This repository contains
 
@@ -18,7 +17,9 @@ This repository contains
 - trained weights for the DFC-2019 contest
 
 ## Usage
+
 ### Training 
+
 ### Inference 
 #### Example on Middlebury
 ## Examples
