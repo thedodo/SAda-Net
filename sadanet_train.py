@@ -36,10 +36,6 @@ save_folder_simb = './weights/simB/'
 
 out_folder = './Out/'
 
-
-num_feat_branch = 60 #60 #46
-num_feat_simb = 50 #50 #45 
-
 #needs to be odd
 #size of patch-crops fed into the network
 patch_size = 11#11
