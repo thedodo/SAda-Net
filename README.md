@@ -24,8 +24,25 @@ This repository contains
 - trained weights for the DFC-2019 contest
 
 ## Usage
+We use a trainable guided filter for the cost-volume (see [project](http://wuhuikai.me/DeepGuidedFilterProject/)). This can be installed via pip.
+
+ ```pip install guided-filter-pytorch```
+We use OpenCV for multiple image manipulations. 
+```pip install opencv-python```
+for geotiff manipulation we use gdal. On Ubuntu install with:
+```sudo apt install libgeotiff-dev libgdal-dev```
+
+If you have problems installing gdal try following the install instruction from the s2p software (see [s2p](https://github.com/centreborelli/s2p))
 
 ### Training 
+If you want to train our method on your own data, we provide two different scripts in order to do this.
+If you want to use jupyter notebook (or google colab) for training, you can check out and run *SAda-Net_train.ipynb* in the root of this repository. 
+If you want a pure python3 implementation, we also provide a *sadanet_train.py* script in the root of this repository.
+Usage: ```python sadanet_train.py```. 
+We provide a dataloader function for Middlebury, *loadMB*, KITTI2012, *loadKitti2012* and for georeferenced panchromatic tiles, such as ones created by s2p, *loadJack*. For the georeferenced case, the script assumes that all left and corresponding right tiles have the same name but be stored in different folders.
+For example:
+```./left_tiles_folder/tile1.tif```
+```./right_tiles_folder/tile1.tif```
 
 ### Inference 
 #### Example on Middlebury
