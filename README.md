@@ -2,6 +2,7 @@
 ### A Self-Supervised Adaptive Stereo Estimation CNN For Remote Sensing Image Data
 Dominik Hirner, Friedrich Fraundorfer
 ![Network](./docs/Network_header.png)
+
 A pytorch implementation of our completely self-supervised stereo method for remote sensing image data.
 This method has been accepted and will be published at the **ICPR 2024** conference. If you use our work please cite our paper (link later).
 
