@@ -42,10 +42,19 @@ If you want to use jupyter notebook (or google colab) for training, you can chec
 If you want a pure python3 implementation, we also provide a *sadanet_train.py* script in the root of this repository.
 Usage: ```python sadanet_train.py```. 
 We provide a dataloader function for Middlebury, *loadMB*, KITTI2012, *loadKitti2012* and for georeferenced panchromatic tiles, such as ones created by s2p, *loadJack*. For the georeferenced case, the script assumes that all left and corresponding right tiles have the same name but be stored in different folders.
+
 For example:
+
 ```./left_tiles_folder/tile1.tif```
+
 ```./right_tiles_folder/tile1.tif```
 
+will be loaded as one training pair.
+
+Change the path in the loadJack() function to your own dataset for this.
+
 ### Inference 
+If you want to try out our method, a demo script called *sadanet_demo.py* is available in the root of this repository. 
+
 #### Example on Middlebury
 ## Examples
