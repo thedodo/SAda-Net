@@ -27,9 +27,11 @@ This repository contains
 We use a trainable guided filter for the cost-volume (see [project](http://wuhuikai.me/DeepGuidedFilterProject/)). This can be installed via pip.
 
  ```pip install guided-filter-pytorch```
+
 We use OpenCV for multiple image manipulations. 
 ```pip install opencv-python```
-for geotiff manipulation we use gdal. On Ubuntu install with:
+
+For the geotiff manipulation we use gdal. On Ubuntu install with:
 ```sudo apt install libgeotiff-dev libgdal-dev```
 
 If you have problems installing gdal try following the install instruction from the s2p software (see [s2p](https://github.com/centreborelli/s2p))
