@@ -56,5 +56,9 @@ Change the path in the loadJack() function to your own dataset for this.
 ### Inference 
 If you want to try out our method, a demo script called *sadanet_demo.py* is available in the root of this repository. 
 
-#### Example on Middlebury
+Usage ```python sadanet_demo.py```
+
+We included our trained weights trained on Jacksonville data from the GRSS2019 data challenge in this repository.
+The result will be saved in the pfm format in the *Out* folder of this repository.
+
 ## Examples
